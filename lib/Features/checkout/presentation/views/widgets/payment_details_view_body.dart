@@ -16,14 +16,10 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
   final GlobalKey<FormState> formKey = GlobalKey();
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-      
         SliverToBoxAdapter(
           child: CustomCreditCard(
             autovalidateMode: autovalidateMode,
